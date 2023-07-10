@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Breast Cancer Prediction</title>
+    <link rel="icon" type="image/x-icon" href=".\static\img\favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+    color: rgb(208, 64, 126);
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+}
+  *{
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: rgb(225, 217, 248);
+}
+
+.form{
+    text-align: center;
+}
+
+</style></head>
+<body>
+    <div>
+        <h1>BREAST CANCER PREDICTION</h1>
+    </div>
+        <!--<div class="column right">
+            <img src="../static/img/pic2.webp" height=300px><img>
+        </div> -->
+
+<div class="mainn">
+<div class ="form">
+    <h2> Test whether you have breast cancer or not!</h2>
+    <h5><i>(Please enter the mentioned features of the breast tissue)</i></h5>
+    <form action="result" id="form">
+
+        <label>Mean Radius : </label><br><input type="number" step="0.001" min="0" name="mean_radius" required><br><br>
+        <label> Mean Texture : </label><br><input type="number" step="0.001" min="0" name="mean_texture" required><br><br>
+        <label> Mean Perimeter : </label><br><input type="number" step="0.001" min="0" name="mean_perimeter" required><br><br>
+        <label>Mean Area : </label><br><input type="number" step="0.001" min="0" name="mean_area" required><br><br>
+        <label>Mean Smoothness : </label><br><input type="number" step="0.001" min="0" name="mean_smoothness" required><br> <br>
+        <input type="submit">
+    
+    </form>
+</div>
+</div>
+</body>
+</html>
